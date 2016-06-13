@@ -1,11 +1,11 @@
 package lectures.week3
 
-object Week3 {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(82); 
-  println("Welcome to the Scala worksheet");$skip(44); 
+object Week3 {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
   
-  val t1 = new NonEmpty(3, Empty, Empty);System.out.println("""t1  : lectures.week3.NonEmpty = """ + $show(t1 ));$skip(24); 
+  val t1 = new NonEmpty(3, Empty, Empty)          //> t1  : lectures.week3.NonEmpty = {.3.}
   
-  val t2 = t1 incl 4;System.out.println("""t2  : lectures.week3.IntSet = """ + $show(t2 ))}
+  val t2 = t1 incl 4                              //> t2  : lectures.week3.IntSet = {{.4.}3.}
 }
 
 abstract class IntSet {
